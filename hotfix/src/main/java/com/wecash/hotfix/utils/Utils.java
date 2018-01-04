@@ -1,9 +1,10 @@
 package com.wecash.hotfix.utils;
 
-import android.app.Activity;
+import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
@@ -89,12 +90,21 @@ public class Utils {
         return builder.toString();
     }
 
-    public static String getIMEI(Context ctx) {
-        TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Activity.TELEPHONY_SERVICE);
-        if (tm != null) {
-            return tm.getDeviceId();
+    public static String getIMEI(Context context) {
+        TelephonyManager mTelephonyMgr = (TelephonyManager)
+                context.getSystemService(Context.TELEPHONY_SERVICE);
+        String IMEI = "";
+        try {
+            if (ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) !=
+                    PackageManager.PERMISSION_GRANTED) {
+                return "";
+            }
+            IMEI = mTelephonyMgr.getDeviceId() == null ? "000000000000000" : mTelephonyMgr.getDeviceId();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return null;
+        return IMEI;
     }
+
 
 }  

@@ -4,7 +4,7 @@ package com.wecash.hotfix.models;
  * Created by wecash on 2017/12/28.
  */
 
-public class VersionControl {
+public class RequestModels {
     public String sourceMark;
     public String deviceMacAddress;
     public String localHotUpdateVersion;

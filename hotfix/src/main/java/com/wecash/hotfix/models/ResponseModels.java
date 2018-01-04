@@ -4,7 +4,7 @@ package com.wecash.hotfix.models;
  * Created by wecash on 2018/1/2.
  */
 
-public class VersionResult {
+public class ResponseModels {
 
     /**
      * remoteVersion : 1.0.0
@@ -27,7 +27,7 @@ public class VersionResult {
 
     @Override
     public String toString() {
-        return "VersionResult{" +
+        return "ResponseModels{" +
                 "remoteVersion='" + remoteVersion + '\'' +
                 ", remoteHotUpdateVersion='" + remoteHotUpdateVersion + '\'' +
                 ", remoteVersionUpdateDescription='" + remoteVersionUpdateDescription + '\'' +
