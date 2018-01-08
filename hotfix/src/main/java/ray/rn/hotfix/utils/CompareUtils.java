@@ -1,4 +1,4 @@
-package com.ray.rn.hotfix.utils;
+package ray.rn.hotfix.utils;
 
 import android.text.TextUtils;
 

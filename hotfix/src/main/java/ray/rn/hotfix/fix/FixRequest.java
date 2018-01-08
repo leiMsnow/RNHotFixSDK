@@ -1,16 +1,10 @@
-package com.ray.rn.hotfix.fix;
+package ray.rn.hotfix.fix;
 
 import android.app.Activity;
 import android.os.Build;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.ray.rn.hotfix.models.RequestModels;
-import com.ray.rn.hotfix.models.ResponseModels;
-import com.ray.rn.hotfix.utils.CompareUtils;
-import com.ray.rn.hotfix.utils.IntenetUtil;
-import com.ray.rn.hotfix.utils.SPUtils;
-import com.ray.rn.hotfix.utils.Utils;
 
 import java.io.IOException;
 
@@ -19,6 +13,12 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import ray.rn.hotfix.models.RequestModels;
+import ray.rn.hotfix.models.ResponseModels;
+import ray.rn.hotfix.utils.CompareUtils;
+import ray.rn.hotfix.utils.IntenetUtil;
+import ray.rn.hotfix.utils.SPUtils;
+import ray.rn.hotfix.utils.Utils;
 
 /**
  * Created by wecash on 2018/1/4.
@@ -59,7 +59,6 @@ public class FixRequest {
                     OkHttpClient client = new OkHttpClient();
                     Response response = client.newCall(request).execute();
                     if (response != null) {
-//                        Log.i("FixRequest", response.body().string());
                         ResponseModels result = new Gson().fromJson(response.body().charStream(), ResponseModels.class);
                         Log.i("FixRequest", result.toString());
                         FixResponse versionResponse = new FixResponse(context);

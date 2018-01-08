@@ -1,8 +1,8 @@
-package com.ray.rn.hotfix.command;
+package ray.rn.hotfix.command;
 
 import android.app.Activity;
 
-import com.ray.rn.hotfix.models.ResponseModels;
+import ray.rn.hotfix.models.ResponseModels;
 
 /**
  * Created by wecash on 2018/1/4.

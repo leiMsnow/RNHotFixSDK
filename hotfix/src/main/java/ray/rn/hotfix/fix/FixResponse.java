@@ -1,16 +1,16 @@
-package com.ray.rn.hotfix.fix;
+package ray.rn.hotfix.fix;
 
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.ray.rn.hotfix.command.ColdCommand;
-import com.ray.rn.hotfix.command.HotCommand;
-import com.ray.rn.hotfix.command.ICommand;
-import com.ray.rn.hotfix.models.ResponseModels;
-
 import java.lang.ref.WeakReference;
+
+import ray.rn.hotfix.command.ColdCommand;
+import ray.rn.hotfix.command.HotCommand;
+import ray.rn.hotfix.command.ICommand;
+import ray.rn.hotfix.models.ResponseModels;
 
 /**
  * Created by wecash on 2018/1/4.

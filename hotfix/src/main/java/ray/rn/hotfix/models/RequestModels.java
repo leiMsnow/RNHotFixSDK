@@ -1,4 +1,4 @@
-package com.ray.rn.hotfix.models;
+package ray.rn.hotfix.models;
 
 /**
  * Created by wecash on 2017/12/28.
