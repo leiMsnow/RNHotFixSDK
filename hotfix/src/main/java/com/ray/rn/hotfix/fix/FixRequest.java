@@ -1,16 +1,16 @@
-package com.wecash.hotfix.fix;
+package com.ray.rn.hotfix.fix;
 
 import android.app.Activity;
 import android.os.Build;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.wecash.hotfix.models.RequestModels;
-import com.wecash.hotfix.models.ResponseModels;
-import com.wecash.hotfix.utils.CompareUtils;
-import com.wecash.hotfix.utils.IntenetUtil;
-import com.wecash.hotfix.utils.SPUtils;
-import com.wecash.hotfix.utils.Utils;
+import com.ray.rn.hotfix.models.RequestModels;
+import com.ray.rn.hotfix.models.ResponseModels;
+import com.ray.rn.hotfix.utils.CompareUtils;
+import com.ray.rn.hotfix.utils.IntenetUtil;
+import com.ray.rn.hotfix.utils.SPUtils;
+import com.ray.rn.hotfix.utils.Utils;
 
 import java.io.IOException;
 

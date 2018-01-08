@@ -1,9 +1,9 @@
-package com.wecash.hotfix.command;
+package com.ray.rn.hotfix.command;
 
 import android.app.Activity;
 import android.util.Log;
 
-import com.wecash.hotfix.models.ResponseModels;
+import com.ray.rn.hotfix.models.ResponseModels;
 
 /**
  * Created by wecash on 2018/1/4.

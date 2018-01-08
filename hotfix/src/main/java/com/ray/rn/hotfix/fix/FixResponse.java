@@ -1,14 +1,14 @@
-package com.wecash.hotfix.fix;
+package com.ray.rn.hotfix.fix;
 
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.wecash.hotfix.command.ColdCommand;
-import com.wecash.hotfix.command.HotCommand;
-import com.wecash.hotfix.command.ICommand;
-import com.wecash.hotfix.models.ResponseModels;
+import com.ray.rn.hotfix.command.ColdCommand;
+import com.ray.rn.hotfix.command.HotCommand;
+import com.ray.rn.hotfix.command.ICommand;
+import com.ray.rn.hotfix.models.ResponseModels;
 
 import java.lang.ref.WeakReference;
 

@@ -1,4 +1,4 @@
-package com.wecash.hotfix.utils;
+package com.ray.rn.hotfix.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -24,8 +24,6 @@ public class IntenetUtil {
     /**
      * 获取当前网络连接类型
      *
-     * @param context
-     * @return
      */
     public static String getNetworkState(Context context) {
         //获取系统的网络服务  

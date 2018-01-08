@@ -1,8 +1,8 @@
-package com.wecash.hotfix;
+package com.ray.rn.hotfix;
 
 import android.app.Activity;
 
-import com.wecash.hotfix.fix.FixRequest;
+import com.ray.rn.hotfix.fix.FixRequest;
 
 /**
  * Created by wecash on 2018/1/4.

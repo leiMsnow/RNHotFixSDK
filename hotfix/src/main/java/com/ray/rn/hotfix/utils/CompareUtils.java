@@ -1,4 +1,4 @@
-package com.wecash.hotfix.utils;
+package com.ray.rn.hotfix.utils;
 
 import android.text.TextUtils;
 

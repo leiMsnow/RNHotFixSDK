@@ -1,4 +1,4 @@
-package com.wecash.hotfix.utils;
+package com.ray.rn.hotfix.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -162,8 +162,6 @@ public class SPUtils {
     /**
      * 返回所有的键值对
      *
-     * @param context
-     * @return
      */
     public static Map<String, ?> getAll(Context context) {
         return getAll(context, FILE_NAME);
