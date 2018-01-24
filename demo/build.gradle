@@ -22,5 +22,5 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation project(':hotfix')
-//    compile 'ray.rn:hotfix:0.0.1'
+//    compile 'ray.rn:hotfix:0.0.3'
 }

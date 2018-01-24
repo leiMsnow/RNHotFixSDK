@@ -2,7 +2,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = "ray.rn"
-version = "0.0.1"
+version = "0.0.4"
 
 def siteUrl = 'https://github.com/leiMsnow/RNHotFixSDK'
 def issuesUrl = 'https://github.com/leiMsnow/RNHotFixSDK/issues'
@@ -49,8 +49,8 @@ task javadoc(type: Javadoc) {
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
-    from javadoc.destinationDir
     classifier = 'javadoc'
+    from javadoc.destinationDir
 }
 
 artifacts {
@@ -75,7 +75,7 @@ bintray {
         websiteUrl = siteUrl
         issueTrackerUrl = issuesUrl
         vcsUrl = gitUrl
-        labels = ["React Native", "HotFix"]
+        labels = ["React Native", "HotFix", "Android"]
         licenses = ["Apache-2.0"]
         publicDownloadNumbers = true
         publish = true

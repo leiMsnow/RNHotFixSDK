@@ -65,7 +65,6 @@ public class Utils {
                         .toUpperCase().substring(0, 17);
             } catch (Exception e) {
                 e.printStackTrace();
-
             }
 
         }

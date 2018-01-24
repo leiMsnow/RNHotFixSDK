@@ -2,7 +2,6 @@ package ray.rn.hotfix.fix;
 
 import android.app.Activity;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 
 import java.lang.ref.WeakReference;
@@ -20,8 +19,8 @@ public class FixResponse {
 
     private MyHandler myHandler = null;
 
-    public FixResponse(Activity mContext) {
-        myHandler = new MyHandler(mContext, mContext.getMainLooper());
+    public FixResponse(Activity context) {
+        myHandler = new MyHandler(context);
     }
 
     public void coldCommand(ResponseModels result) {
@@ -41,8 +40,8 @@ public class FixResponse {
     private static class MyHandler extends Handler {
         private WeakReference<Activity> weakReference;
 
-        public MyHandler(Activity context, Looper looper) {
-            super(looper);
+        public MyHandler(Activity context) {
+            super(context.getMainLooper());
             weakReference = new WeakReference<>(context);
         }
 

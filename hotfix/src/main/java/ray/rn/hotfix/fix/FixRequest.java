@@ -70,10 +70,11 @@ public class FixRequest {
                             versionResponse.coldCommand(result);
                         }
                         // 热更新处理
-//                        String oldHotVersion = requestModels.localHotUpdateVersion;
-//                        String newHotVersion = result.remoteHotUpdateVersion;
+                        String oldHotVersion = requestModels.localHotUpdateVersion;
+                        String newHotVersion = result.remoteHotUpdateVersion;
 //                        if (CompareUtils.compareVersion(oldHotVersion, newHotVersion) == -1) {
-//                            versionResponse.hotCommand(result);
+                            Log.i("FixRequest", "versionResponse.hotCommand");
+                            versionResponse.hotCommand(result);
 //                        }
                     }
                 } catch (IOException e) {
