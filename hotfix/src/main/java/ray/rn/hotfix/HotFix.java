@@ -21,7 +21,7 @@ public class HotFix {
 
     @Nullable
     public static String getJSBundleFile(Context context) {
-        String path = FileConstant.getAppRoot(context) + FileConstant.JS_BUNDLE_NAME;
+        String path = FileConstant.getAppRoot(context) + "/" + FileConstant.JS_BUNDLE_NAME;
         File file = new File(path);
         if (file.exists()) {
             Log.d("getBundleFile", "'local_js_bundle'");

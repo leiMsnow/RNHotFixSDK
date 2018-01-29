@@ -38,7 +38,7 @@ public class HotCommand implements ICommand {
     }
 
     private void downAsyncFile(final Context context, String fileUrl) {
-//        fileUrl = FileConstant.JS_BUNDLE_REMOTE_URL;
+        fileUrl = FileConstant.JS_BUNDLE_REMOTE_URL;
         if (TextUtils.isEmpty(fileUrl)) {
             return;
         }

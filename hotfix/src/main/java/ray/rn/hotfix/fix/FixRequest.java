@@ -72,10 +72,10 @@ public class FixRequest {
                         // 热更新处理
                         String oldHotVersion = requestModels.localHotUpdateVersion;
                         String newHotVersion = result.remoteHotUpdateVersion;
-                        if (CompareUtils.compareVersion(oldHotVersion, newHotVersion) == -1) {
+//                        if (CompareUtils.compareVersion(oldHotVersion, newHotVersion) == -1) {
                             Log.i("FixRequest", "versionResponse.hotCommand");
                             versionResponse.hotCommand(result);
-                        }
+//                        }
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
